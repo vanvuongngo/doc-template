@@ -1,0 +1,65 @@
+---
+title: Entwicklerhandbuch
+description: Do’s und Don’ts, Architektur und Workflow für die Entwicklung im Projekt X.
+template: splash
+hero:
+  tagline: So entwickeln wir — Regeln, Architektur und Alltag.
+  actions:
+    - text: Die Regeln lesen
+      link: /de/dos-and-donts/overview/
+      icon: right-arrow
+    - text: Lokal aufsetzen
+      link: /de/getting-started/overview/
+      icon: rocket
+      variant: minimal
+    - text: Weiter Referenzen öffnen
+      link: https://...
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+## Hier starten
+
+<CardGrid>
+  <Card title="Neu in diesen Projext X?" icon="rocket">
+    Lies [Überblick](/de/getting-started/overview/) ...
+  </Card>
+  <Card title="Do’s und Don’ts" icon="approve-check">
+    Die [Regeln](/de/dos-and-donts/overview/) sind der kürzeste Weg zu Code, der
+    in dieses Repo passt. Lies sie, bevor du einen PR öffnest.
+  </Card>
+  <Card title="Wie das System funktioniert" icon="puzzle">
+    Dieses Projekt X ist ein ...
+  </Card>
+  <Card title="Mehr zum lesen" icon="open-book">
+    Weiteres Thema ...
+  </Card>
+</CardGrid>
+
+## Was gehört wohin
+
+<CardGrid>
+  <LinkCard
+    title="Dieses Handbuch"
+    href="/de/getting-started/overview/"
+    description="Entwickler-Konventionen, Architektur, Workflow und Onboarding."
+  />
+  <LinkCard
+    title="Anleitungen"
+    href="/de/guides/overview/"
+    description="Komponente und Theme anlegen."
+  />
+  <LinkCard
+    title="Beispiel Thema ..."
+    href="https://..."
+    description="Komponenten-Stories, Design-Previews und Feature-Doku."
+  />
+  <LinkCard
+    title="Kanonisches Glossar"
+    href="/de/reference/glossary/"
+    description="Begriffe wie ..."
+  />
+
+</CardGrid>
