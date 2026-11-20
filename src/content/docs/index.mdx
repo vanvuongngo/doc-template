@@ -1,0 +1,59 @@
+---
+title: The developer handbook
+description: Do's and don'ts, architecture, and workflow for developers working in project.
+template: splash
+hero:
+  tagline: How we build this project — the rules, the architecture, and the day-to-day workflow.
+  actions:
+    - text: Read the rules
+      link: /dos-and-donts/overview/
+      icon: right-arrow
+    - text: Set up locally
+      link: /getting-started/overview/
+      icon: rocket
+      variant: minimal
+    - text: Open ...
+      link: https://...
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+## Start here
+
+<CardGrid>
+  <Card title="New to this project?" icon="rocket">
+    Read [Overview](/getting-started/overview/) ...
+  </Card>
+  <Card title="Do's and Don'ts" icon="approve-check">
+    The [rules](/dos-and-donts/overview/) are the shortest path to writing code
+    that fits this repo. Start there before opening a PR.
+  </Card>
+  <Card title="How the system works" icon="puzzle">
+    This project is a repository. Learn ...
+  </Card>
+  <Card title="Another topic ..." icon="open-book">
+    ...
+  </Card>
+</CardGrid>
+
+## What belongs where
+
+<CardGrid>
+  <LinkCard
+    title="This handbook"
+    href="/getting-started/overview/"
+    description="Developer conventions, architecture decisions, workflow, and onboarding."
+  />
+  <LinkCard
+    title="How-to guides"
+    href="/guides/overview/"
+    description="Add a component or theme."
+  />
+  <LinkCard
+    title="Glossary"
+    href="/reference/glossary"
+    description="Overview about terms."
+  />
+</CardGrid>

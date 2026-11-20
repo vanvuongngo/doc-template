@@ -1,0 +1,33 @@
+---
+title: The rules
+description: The short list of do's and don'ts every new developer should internalize.
+---
+
+import { Aside, CardGrid, LinkCard } from "@astrojs/starlight/components";
+
+Read this page before you write code. The following pages explain the why. If a review comment surprises you, it is probably one of these rules.
+
+## Decide in this order
+
+1. **Is it secure?** No new vulnerability, no leaked secret, no unsanitized input.
+2. **Is it functional?** It does what the ticket asked.
+3. **Is it maintainable?** DRY, KISS, typed, tested, no surprise side effects.
+4. **Is it fast?** Ship only what the page needs. Static beats interactive.
+5. **Is it compliant?** It matches conventions.
+
+## Always do
+
+- ...
+
+## Never do
+
+- ...
+
+<Aside type="tip" title="When two rules conflict">
+  Security wins. Then correctness. Then maintainability. A clever performance
+  trick that is hard to review is the wrong trade.
+</Aside>
+
+## Deep dives
+
+...
